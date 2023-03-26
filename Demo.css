@@ -1,0 +1,230 @@
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: cursive;
+}
+
+a {	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: teal;
+	color: #fff;
+}
+	
+.nav-links a {
+	color: #fff;
+}
+
+/* LOGO */
+.logo {
+	font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+	display: flex;
+	gap: 1em;
+	font-size: 18px;
+}
+.menu li:hover {
+	background-color: #4c9e9e;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+.menu li {
+	padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+	position: relative; 
+}
+.dropdown {
+	background-color: rgb(1, 139, 139);
+	padding: 1em 0;
+	position: absolute; /*WITH RESPECT TO PARENT*/
+	display: none;
+	border-radius: 8px;
+	top: 35px;
+}
+.dropdown li + li {
+	margin-top: 10px;
+}
+.dropdown li {
+	padding: 0.5em 1em;
+	width: 8em;
+	text-align: center;
+}
+.dropdown li:hover {
+	background-color: #4c9e9e;
+}
+.services:hover .dropdown {
+	display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+input[type=checkbox]{
+	display: none;
+} 
+
+/*HAMBURGER MENU*/
+.hamburger {
+	display: none;
+	font-size: 24px;
+	user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+	@media (max-width: 768px) {
+
+	.menu { 
+		display:none;
+		position: absolute;
+		background-color:teal;
+		right: 0;
+		left: 0;
+		text-align: center;
+		padding: 16px 0;
+	}
+
+	.menu li:hover {
+		display: inline-block;
+		background-color:#4c9e9e;
+		transition: 0.3s ease;
+	}
+
+	.menu li + li {
+		margin-top: 12px;
+	}
+
+	input[type=checkbox]:checked ~ .menu{
+		display: block;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.dropdown {
+		left: 50%;
+		top: 30px;
+		transform: translateX(35%);
+	}
+
+	.dropdown li:hover {
+		background-color: #4c9e9e;
+	}
+
+}
+h1{
+	text-align: center;
+	font-size: 180%;
+}
+menu.div{
+    		 padding: 8 px;
+            margin-bottom: 7px;
+            background-color:  rgb(200,100,20);
+            color: green;
+            box-shadow: 0 1px 3px rgb(200,50,20);
+
+    	}
+/* Art & Culture and Ten flower */
+[class*="col-"]{
+                   float: left;
+                   padding: 20px;
+                   font-size:20px;
+                }
+
+         [class*="col-"]{
+                width: 100%;
+
+            }
+ @media only screen and (min-width: 700px){
+        .cols-1{width: 8.33%}
+        .cols-2{width: 19.89%}
+        .cols-3{width: 25%}
+        .cols-4{width: 33.33%}
+        .cols-5{width: 41.66%}
+        .cols-6{width: 50%}
+        .cols-7{width: 58.33%}
+        .cols-8{width: 66.66%}
+        .cols-9{width: 75%}
+        .cols-10{width: 83%}
+        .cols-11{width: 91.66%}
+        .cols-12{width: 100%}
+    }
+
+    @media only screen and (min-width: 998px){
+        .col-1{width: 8.33%}
+        .col-2{width: 19.89%}
+        .col-3{width: 25%}
+        .col-4{width: 33.33%}
+        .col-5{width: 41.66%}
+        .col-6{width: 50%}
+        .col-7{width: 58.33%}
+        .col-8{width: 66.66%}
+        .col-9{width: 75%}
+        .col-10{width: 83%}
+        .col-11{width: 91.66%}
+        .col-12{width: 100%}
+    }
+    section img{
+    	box-shadow: 0px 0px 10px blue;
+
+    }
+       
+
+    /* Wood Caving */
+
+    .woodcarving{
+    	margin: auto;
+
+    }
+    /* blacksmith*/
+
+    .blacksmith{
+    	margin: auto;
+    }
+    /*goldsmith*/
+
+    .goldsmith{
+    	margin: auto;
+    }
+    /*stucco relief*/
+
+    .stucco{
+    	margin: auto;
+    }
+    /*masonry*/
+
+    .masonry{
+    	margin: auto;
+    }
+    /*down*/
+
+    .down{
+    	margin: 500px;
+    }
+    
+
+    
+
